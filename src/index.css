@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-synthesis: none;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+@layer components {
+  a.nav-link {
+    transition: color 0.2s ease-in-out;
+  }
+
+  a.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    display: inline-block;
+    width: 0%;
+    transition: width 0.2s ease-in-out;
+    @apply bg-primary;
+  }
+
+  a.nav-link:hover::after {
+    width: 100%;
+  }
+
+  section.bg-blob {
+    background: url("/images/blob-scene.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  
+}
