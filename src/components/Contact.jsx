@@ -1,5 +1,6 @@
 import { BsFillSendFill } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
+import { AiFillGithub } from "react-icons/ai";
 export default function Contact() {
   return (
     <section className="text-gray-600 body-font relative">
@@ -54,16 +55,21 @@ export default function Contact() {
               </button>
             </div>
             <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-              <a className="text-indigo-500">example@email.com</a>
               <p className="leading-normal my-5">
                 49 Smith St.
                 <br />
                 Saint Cloud, MN 56301
               </p>
               <span className="inline-flex">
-                <span className="shadow p-2 rounded-full">
-                  <SiGmail className="w-6 h-6" />
-                </span>
+                <a className="shadow p-2 rounded-full">
+                  <SiGmail className="w-6 h-6 hover:fill-primary" />
+                </a>
+                <a className="shadow p-2 rounded-full hover:fill-primary hover:stroke-primary">
+                  <AiFillGithub className="w-6 h-6 hover:fill-primary" />
+                </a>
+                <a className="shadow p-2 rounded-full hover:fill-primary hover:stroke-primary">
+                  <AiFillGithub className="w-6 h-6 hover:fill-primary" />
+                </a>
               </span>
             </div>
           </div>
