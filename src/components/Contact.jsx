@@ -60,7 +60,11 @@ export default function Contact() {
                 <br />
                 Saint Cloud, MN 56301
               </p>
-              <span className="inline-flex"></span>
+              <span className="inline-flex">
+                <span className="shadow p-2 rounded-full">
+                  <SiGmail className="w-6 h-6" />
+                </span>
+              </span>
             </div>
           </div>
         </div>
