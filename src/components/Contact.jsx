@@ -1,6 +1,6 @@
 import { BsFillSendFill } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
-import { AiFillGithub } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 export default function Contact() {
   return (
     <section className="text-gray-600 body-font relative">
@@ -55,20 +55,24 @@ export default function Contact() {
               </button>
             </div>
             <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-              <p className="leading-normal my-5">
-                49 Smith St.
-                <br />
-                Saint Cloud, MN 56301
-              </p>
-              <span className="inline-flex">
-                <a className="shadow p-2 rounded-full">
+              <span className="inline-flex gap-4">
+                <a
+                  href="mailto:mubasharali669266@gmail.com"
+                  className="shadow-md p-2 cursor-pointer rounded-full focus:outline-none focus:outline-primary"
+                >
                   <SiGmail className="w-6 h-6 hover:fill-primary" />
                 </a>
-                <a className="shadow p-2 rounded-full hover:fill-primary hover:stroke-primary">
+                <a
+                  href="https://github.com/UndergroundProgrammer"
+                  className="shadow-md p-2 cursor-pointer rounded-full focus:outline-none focus:outline-primary"
+                >
                   <AiFillGithub className="w-6 h-6 hover:fill-primary" />
                 </a>
-                <a className="shadow p-2 rounded-full hover:fill-primary hover:stroke-primary">
-                  <AiFillGithub className="w-6 h-6 hover:fill-primary" />
+                <a
+                  href="https://www.linkedin.com/in/mubashar-ali-33a9141bb/"
+                  className="shadow-md p-2 cursor-pointer rounded-full focus:outline-none focus:outline-primary"
+                >
+                  <AiFillLinkedin className="w-6 h-6 hover:fill-primary" />
                 </a>
               </span>
             </div>
